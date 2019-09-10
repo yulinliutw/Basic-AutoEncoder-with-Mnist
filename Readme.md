@@ -59,6 +59,6 @@ Current performance(average L1 loss per pixel): 0.0241
 Some visualization result:
 
 <p align="center">
-<img src="https://www.github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt=" " width="200" height="200"></p>
+<img src="https://github.com/yulinliutw/Basic-AutoEncoder-with-Mnist/blob/master/doc/exp_result.png" alt=" " width="200" height="200"></p>
 
 
