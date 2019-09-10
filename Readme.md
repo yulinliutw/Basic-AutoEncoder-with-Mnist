@@ -1,4 +1,4 @@
-#Basic Autoencoder with Mnist
+# Basic Autoencoder with Mnist
 ---
 
 This model can work on the Mnist, the model take the handwritten numbers image as input, them its output try to reconstruct the image.
@@ -12,12 +12,14 @@ It is authored by **YU LIN LIU**.
 - <a href='#training'>Training</a>
 - <a href='#evaluation'>Evaluation</a>
 - <a href='#performance'>Performance</a>
-##Model Architecture
+
+## Model Architecture
 ---
 The model content the encoder and decoder part, each module have 3 layers, both of them use the *fully connect layer(FC)*, originally, I try to use the CNN structure, but the the result is not good, after I change the model structure to the *FC*, the result is very perfect, I think **maybe** the *FC* can more easy to handle the *human design* or *small* data.
 Besides, by using the *LeakyReLU()* activation function, the model can more easy to train, it really prevent the *gradient vanishing problem*, so most activation function I use it, and only final activation function use the Sigmoid() for trying to make input image back.
 **For more detail of the model, you can check the autoencoder.py**
-##Installation
+
+## Installation
 ---
 - Install the [PyTorch](http://pytorch.org/) by selecting your environment on the website.
 - Clone this repository.
@@ -38,7 +40,8 @@ Current time, the pytorch library can directly provide this dataset, in my setti
 ```Shell
 python train.py
 ```	
-##Evaluation
+
+## Evaluation
 ---
 This action will show some result from model and the performane(average L1 loss per pixel) of the model. for the evaluation, I cut the 4000 data for validation, another testing data is for final evaluation.
 
@@ -49,7 +52,7 @@ This action will show some result from model and the performane(average L1 loss 
 python eval.py
 ```	
 
-##Performance
+## Performance
 ---
 I train this model about 100 epoch.
 Current performance(average L1 loss per pixel): 0.0241
