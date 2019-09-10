@@ -8,7 +8,7 @@ It is authored by **YU LIN LIU**.
 ### Table of Contents
 - <a href='#model-architecture'>Model Architecture</a>
 - <a href='#installation'>Installation</a>
-- <a href='#datasets'>Datasets</a>
+- <a href='#dataset'>Dataset</a>
 - <a href='#training'>Training</a>
 - <a href='#evaluation'>Evaluation</a>
 - <a href='#performance'>Performance</a>
