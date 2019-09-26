@@ -21,7 +21,7 @@ class load_data:
         return train_loader
     def val(self):
         test_data = torchvision.datasets.MNIST(root='./MNIST_data/', train=False,download=True)        
-        test_x = test_data.test_data[:4000].view(-1,1,28,28).type(torch.FloatTensor)/255.   # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
+        test_x = test_data.test_data[:4000].view(-1,1,28,28).type(torch.FloatTensor)/255.   # shape from (:, 28, 28) to (:, 1, 28, 28), value in range(0,1)
         test_y = test_data.test_labels[:4000]        
         return test_x,test_y
     def test(self):
